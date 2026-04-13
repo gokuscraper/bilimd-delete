@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili 图片包装器一键删除",
+  "version": "1.0.0",
+  "description": "在 Bilibili 专栏编辑页显示悬浮按钮，点击后删除所有 class=\"eva3-enhanced-image-wrapper\" 的 div 元素。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://member.bilibili.com/platform/upload/text/new-edit*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
